@@ -17,25 +17,17 @@ Each time a visitor taps **“Try a sample quote”**, the kiosk should simulate
 
 ### 2. Compute EMI (Equated Monthly Installment – using `Math` API)
 - **Monthly rate (r):**
-  \[
-  r = \frac{APR}{12 \times 100}
-  \]
+  r = APR / 12 / 100
 
 - **EMI formula:**
-  \[
-  EMI = \frac{P \times r \times (1 + r)^n}{(1 + r)^n - 1}
-  \]
+  EMI = P * r * (1 + r)^n / (1 + r)^n - 1
+  
 
 - **Total Payment:**
-  \[
-  Total = EMI \times n
-  \]
+  Total = EMI * n
 
 - **Total Interest:**
-  \[
   Interest = Total - P
-  \]
-
 ---
 
 ## 🏗️ Implementation
@@ -45,5 +37,3 @@ Create a class **`QuickEmiQuote`** with a `main` method that:
 3. Prints a clean summary in the console.
 
 ---
-
-## 📂 Example Output
